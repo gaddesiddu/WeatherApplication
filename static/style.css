@@ -1,0 +1,98 @@
+/* Reset some default styles for full responsiveness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background image */
+  body {
+    background-image: url('https://images.pexels.com/photos/3008509/pexels-photo-3008509.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Style the container for the weather app */
+  .container {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    color: rgb(5, 41, 51);
+    text-align: center;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(3, 46, 87, 0.2);
+  }
+  
+  /* Style the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid white;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #04009A;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #04009A;
+    background-color: transparent;
+    border-radius: 0.3em;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    background-color: rgb(5, 41, 51);
+    color: #fff;
+  }
+  
+  /* Style the weather information */
+  .weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .left h2,
+  .left h3 {
+    font-size: 2rem;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .icon img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .condition p {
+    font-size: 1rem;
+  }
+  
